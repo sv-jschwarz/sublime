@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<script>console.log({{~stringify(${1:data})}});</script>
+]]></content>
+	<tabTrigger>da</tabTrigger>
+</snippet>

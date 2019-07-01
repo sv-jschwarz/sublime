@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AsciiConverter",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"Colorsublime",
+		"CSS Format",
+		"hextoASCII",
+		"Hide Menu",
+		"Highlight Dodgy Chars",
+		"HTMLBeautify",
+		"Package Control",
+		"Pane Resizer",
+		"Pony Language",
+		"Pretty JSON",
+		"SideBarEnhancements",
+		"Theme - Spacegray",
+		"Unicode Escape"
+	]
+}
