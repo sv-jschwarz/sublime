@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+{{asset.resource.getThumbnailUrl({ width : 553, height : 381, crop : 'fill', quality : 60, sv : { gravity : 'focalPoint' } })}}
+]]></content>
+	<tabTrigger>image</tabTrigger>
+</snippet>
