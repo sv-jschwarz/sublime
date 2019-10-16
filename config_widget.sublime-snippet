@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[{
+	"name" : "${1:name}",
+	"label" : "${2:label}",
+	"group" : "${1:Custom}",
+	"fitsIn" : ["${1:default}"],
+	"fields" : [
+		{
+			"name" : "title",
+			"type" : "text",
+			"label" : "Title"
+		},
+		{
+			"name" : "link",
+			"label" : "URL",
+			"type" : "link"
+		}
+	]
+},]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>widget</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.json</scope>
+</snippet>

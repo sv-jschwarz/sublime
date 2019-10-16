@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[<!--SVMETA
+{
+	"requireBundles" : ["widget_plugins_collections_template_custom_${1:collectionname}"]
+}
+-->
+
+<div class="${2:classname}" data-guid="{{guid}}">
+	test
+</div>
+
+<script>
+require(['jquery'], function(\$) {
+	var \$root = \$('[data-guid="{{guid}}"]');
+
+});
+</script>]]></content>
+	<tabTrigger>base</tabTrigger>
+	<scope>text.html.basic</scope>
+</snippet>

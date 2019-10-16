@@ -1,0 +1,119 @@
+<snippet>
+	<content><![CDATA[{
+	"name" : "${1:typename}",
+	"label" : "${2:typelabel}",
+	"moduleSettings" : {
+		"singleItemLabel" : "${3:typesingle}",
+		"pluralItemLabel" : "${4:typeplural}",
+		"defaultOptions" : {
+			"sortName" : "created",
+			"sortDir" : "desc"
+		},
+		"hasFilterModule" : true,
+		"hasClone" : true
+	},
+	"fields" : [
+		{
+			"name" : "keyword",
+			"label" : "Keyword",
+			"type" : "text",
+			"moduleGlobal" : {
+				"toFilter" : "!js!module.filter_toQueryOp('$search')",
+				"filterColumn" : "$text",
+				"show" : false
+			},
+			"moduleFilter" : {
+				"show" : true,
+				"template" : "text"
+			}
+		},
+		{
+			"name" : "title",
+			"label" : "Title",
+			"type" : "text",
+			"required" : true,
+			"moduleGlobal" : {
+				"clone" : true,
+				"cloneMap" : { "template" : "Copy of " }
+			},
+			"moduleList" : {
+				"sortable" : true
+			}
+		},
+		{
+			"name" : "description",
+			"label" : "Description",
+			"type" : "textarea",
+			"moduleGlobal" : {
+				"clone" : true
+			},
+			"moduleList" : {
+				"show" : false
+			}
+		},
+		{
+			"name" : "asset",
+			"label" : "Asset",
+			"type" : "asset",
+			"moduleGlobal" : {
+				"clone" : true
+			},
+			"moduleForm" : {
+				"template" : "asset",
+				"handlers" : [
+					{
+						"name" : "assetForm",
+						"args" : {
+							"types" : [
+								"videos",
+								"images"
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"name" : "link",
+			"label" : "URL",
+			"type" : "link",
+			"moduleGlobal" : {
+				"clone" : true
+			}
+		},
+		{
+			"name" : "linkText",
+			"label" : "Link Text",
+			"type" : "text",
+			"required" : false,
+			"moduleGlobal" : {
+				"clone" : true,
+				"cloneMap" : { "template" : "Copy of " }
+			}
+		},
+		{
+			"name" : "created",
+			"label" : "Created",
+			"type" : "date",
+			"moduleList" : {
+				"sortable" : true
+			},
+			"moduleForm" : {
+				"template" : "hidden",
+				"showLabel" : false,
+				"default" : "!js!new Date()",
+				"handlers" : [{ "name" : "formatDate" }],
+				"validation" : {}
+			}
+		}
+	],
+	"indexes" : [
+		{ "keys" : { "title" : "text", "description" : "text" } }
+	],
+	"mappedFeeds" : []
+},]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>slide</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.json</scope>
+</snippet>

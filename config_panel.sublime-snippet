@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[{
+	"name" : "${1:panelname}",
+	"label" : "${2:panellabel}",
+	"fitsIn" : ["default", "content"],
+	"rows" : [
+		{
+			"name" : "content",
+			"label" : "Content",
+			"accepts" : ["default"]
+		}
+	],
+	"fields" : []
+},]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>panel</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.json</scope>
+</snippet>

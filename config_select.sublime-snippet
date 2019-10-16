@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[{
+	"name" : "${1:thename}",
+	"label" : "${2:thelabel}",
+	"type" : "select",
+	"moduleGlobal" : {
+		"options" : [
+			{ "label" : "${3:first}", "value" : "${4:firstvalue}" },
+			{ "label" : "${5:second}", "value" : "${6:secondvalue}" }
+		],
+		"handlers" : [{ "name" : "selectOptions" }],
+		"tooltip" : "${7:tooltip}"
+	}
+},]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>select</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.json</scope>
+</snippet>
