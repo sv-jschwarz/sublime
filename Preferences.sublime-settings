@@ -2,7 +2,7 @@
 	"bold_folder_labels": true,
 	"caret_extra_width": 0,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Colorsublime - Themes/ILMShell.tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/Acai.tmTheme",
 	"copy_with_empty_selection": false,
 	"fade_fold_buttons": true,
 	"file_exclude_patterns":
@@ -20,7 +20,7 @@
 		"subpixel_antialias",
 		"gray_antialias"
 	],
-	"font_size": 20,
+	"font_size": 15,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
