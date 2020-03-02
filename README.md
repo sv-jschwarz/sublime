@@ -21,7 +21,10 @@ Hit `CTRL+SHIFT+P` to install _package control_ and packages.
 - `mq` - Css media queries for tablet and desktop (min-width)
 - `base` - Html starting point for collection widget
 - `image` - Cloudinary getThumbnailUrl
+- `pic` - Responsive picture tag
 - `svmeta` - SVMETA tag
+- `requirecollection` - SVMETA requireBundle collection name
+- `requirecommon` - SVMETA requireBundle common name
 - `panel` - Config common panel
 - `widget` - Config common widget
 - `collection` - Config collection widget
@@ -33,3 +36,4 @@ Hit `CTRL+SHIFT+P` to install _package control_ and packages.
 - `desc` - Config description (text field)
 - `title` - Config title (text field)
 - `text` - Config text field
+- `asset` - Imag asset field
